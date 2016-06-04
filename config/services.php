@@ -50,7 +50,7 @@ return [
     'google' => [
         'client_id' => '301672841035-nkll5p9pb64jsjmu2gfdne5gku0un4hh.apps.googleusercontent.com',
         'client_secret' => 'D70PBxR4zx7R7gTorzjZEU4j',
-        'redirect' => 'http://104.131.0.23/callback/google',
+        'redirect' => '/callback/google',
     ],
 
 ];
