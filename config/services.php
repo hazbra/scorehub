@@ -38,13 +38,13 @@ return [
     'facebook' => [
         'client_id' => '955957134441597',
         'client_secret' => '24a9fa6f3165c3edcaba1762ecc5b61c',
-        'redirect' => '/scorehub2.0/public/callback/facebook',
+        'redirect' => '/scorehub/public/callback/facebook',
     ],
 
     'twitter' => [
       'client_id' => 'kSWAihtsaIyTXl9QWTmE2bBXi',
       'client_secret' => 'yTeKRbnfJ8ZP9yh6eTLFxLwJq52IrJ0RVJtuZ3Q55CAMC3wE88',
-      'redirect' => '/scorehub2.0/public/callback/twitter',
+      'redirect' => '/scorehub/public/callback/twitter',
     ],
 
     'google' => [
