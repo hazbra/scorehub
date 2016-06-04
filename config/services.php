@@ -38,19 +38,19 @@ return [
     'facebook' => [
         'client_id' => '955957134441597',
         'client_secret' => '24a9fa6f3165c3edcaba1762ecc5b61c',
-        'redirect' => '/scorehub/public/callback/facebook',
+        'redirect' => '/scorehub2.0/public/callback/facebook',
     ],
 
     'twitter' => [
       'client_id' => 'kSWAihtsaIyTXl9QWTmE2bBXi',
       'client_secret' => 'yTeKRbnfJ8ZP9yh6eTLFxLwJq52IrJ0RVJtuZ3Q55CAMC3wE88',
-      'redirect' => '/scorehub/public/callback/twitter',
+      'redirect' => '/scorehub2.0/public/callback/twitter',
     ],
 
     'google' => [
         'client_id' => '301672841035-nkll5p9pb64jsjmu2gfdne5gku0un4hh.apps.googleusercontent.com',
         'client_secret' => 'D70PBxR4zx7R7gTorzjZEU4j',
-        'redirect' => '/callback/google',
+        'redirect' => '/scorehub2.0/public/callback/google',
     ],
 
 ];
