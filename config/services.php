@@ -44,7 +44,7 @@ return [
     'twitter' => [
       'client_id' => 'kSWAihtsaIyTXl9QWTmE2bBXi',
       'client_secret' => 'yTeKRbnfJ8ZP9yh6eTLFxLwJq52IrJ0RVJtuZ3Q55CAMC3wE88',
-      'redirect' => '/scorehub2.0/public/callback/twitter',
+      'redirect' => 'http://scorehub.info/callback/twitter',
     ],
 
     'google' => [
