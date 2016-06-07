@@ -38,7 +38,7 @@ return [
     'facebook' => [
         'client_id' => '955957134441597',
         'client_secret' => '24a9fa6f3165c3edcaba1762ecc5b61c',
-        'redirect' => '/scorehub2.0/public/callback/facebook',
+        'redirect' => '/callback/facebook',
     ],
 
     'twitter' => [
