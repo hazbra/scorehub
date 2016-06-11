@@ -10,7 +10,7 @@
 			      <ul class="list-group">
 			        @foreach ($sports as $row) 
 			          <li class="list-group-item">
-			          	 <a href="/scorehub2.0/public/sports/{{ $row->id }}"> 
+			          	 <a href="/sports/{{ $row->id }}"> 
 			          	 	{{ $row->name }}</a>
 			          </li>
 					@endforeach
