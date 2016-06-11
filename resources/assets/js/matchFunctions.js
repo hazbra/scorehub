@@ -10,7 +10,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
                     showgaa()
                 }, 2000);
     // setInterval(function(){
-    //   $('#showgaa').load('/scorehub2.0/public/demo.txt');
+    //   $('#showgaa').load('/demo.txt');
     // },5000);
 
     function showrugby() { //shows the printfan.php page in the bigbox div
@@ -19,7 +19,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
 
         $.ajax({ //requesting the page asynchronously when the function is called
         
-            url: "/scorehub2.0/public/showonerugby/"+game_id,                     
+            url: "/showonerugby/"+game_id,                     
             success: function(data) {
                 $("#showrugby").html(data);
             }
@@ -34,7 +34,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
 
         $.ajax({ //requesting the page asynchronously when the function is called
         
-            url: "/scorehub2.0/public/showonesoccer/"+game_id,                     
+            url: "/showonesoccer/"+game_id,                     
             success: function(data) {
                 $("#showsoccer").html(data);
             }
@@ -50,7 +50,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
 
         $.ajax({ //requesting the page asynchronously when the function is called
         
-            url: "/scorehub2.0/public/showonegaa/"+game_id,                     
+            url: "/showonegaa/"+game_id,                     
             success: function(data) {
                 $("#showgaa").html(data);
             }
@@ -75,7 +75,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type:"POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/undo",
+                url: "/games/"+game_id+"/undo",
                 data: dataString,
                 cache: false,
                 success: console.log('score ' + dataString + ' deleted')
@@ -107,7 +107,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type: "POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/scores",
+                url: "/games/"+game_id+"/scores",
                 data: dataString,
                 cache: false,
                 success: console.log('Message ' + dataString + ' added')
@@ -140,7 +140,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type: "POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/scores",
+                url: "/games/"+game_id+"/scores",
                 data: dataString,
                 cache: false,
                 success: console.log('Message ' + dataString + ' added')
@@ -173,7 +173,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type: "POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/scores",
+                url: "/games/"+game_id+"/scores",
                 data: dataString,
                 cache: false,
                 success: console.log('Message ' + dataString + ' added')
@@ -206,7 +206,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type: "POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/scores",
+                url: "/games/"+game_id+"/scores",
                 data: dataString,
                 cache: false,
                 success: console.log('Message ' + dataString + ' added')
@@ -239,7 +239,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type: "POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/scores",
+                url: "/games/"+game_id+"/scores",
                 data: dataString,
                 cache: false,
                 success: console.log('Message ' + dataString + ' added')
@@ -272,7 +272,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type: "POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/scores",
+                url: "/games/"+game_id+"/scores",
                 data: dataString,
                 cache: false,
                 success: console.log('Message ' + dataString + ' added')
@@ -305,7 +305,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type: "POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/scores",
+                url: "/games/"+game_id+"/scores",
                 data: dataString,
                 cache: false,
                 success: console.log('Message ' + dataString + ' added')
@@ -338,7 +338,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type: "POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/scores",
+                url: "/games/"+game_id+"/scores",
                 data: dataString,
                 cache: false,
                 success: console.log('Message ' + dataString + ' added')
@@ -371,7 +371,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type: "POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/scores",
+                url: "/games/"+game_id+"/scores",
                 data: dataString,
                 cache: false,
                 success: console.log('Message ' + dataString + ' added')
@@ -404,7 +404,7 @@ $(document).ready(function() { //jQuery code, everything in here will load when 
             $.ajax({
                 headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 type: "POST",
-                url: "/scorehub2.0/public/games/"+game_id+"/scores",
+                url: "/games/"+game_id+"/scores",
                 data: dataString,
                 cache: false,
                 success: console.log('Message ' + dataString + ' added')
