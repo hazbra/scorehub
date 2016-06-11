@@ -14,7 +14,7 @@ $(document).ready(function() {
 
         $.ajax({ 
         
-            url: "/scorehub2.0/public/gaa",                     
+            url: "/gaa",                     
             success: function(data) {
                 $("#gaa").html(data);
             }
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
         $.ajax({ 
         
-            url: "/scorehub2.0/public/soccer",                     
+            url: "/soccer",                     
             success: function(data) {
                 $("#soccer").html(data);
             }
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
         $.ajax({ 
         
-            url: "/scorehub2.0/public/rugby",                     
+            url: "/rugby",                     
             success: function(data) {
                 $("#rugby").html(data);
             }
