@@ -1,6 +1,6 @@
 @extends('layouts.app')
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src='/scorehub2.0/public/js/matchFunctions.js'></script>
+<script src='/js/matchFunctions.js'></script>
 
 <script>
   window.twttr = (function(d, s, id) {
@@ -48,7 +48,7 @@
     @endforeach
     <br>
     
-    <form method="POST" action="/scorehub2.0/public/games/{{ $game->id }}/scores">
+    <form method="POST" action="/games/{{ $game->id }}/scores">
       <div class="form-group">
       {{ csrf_field() }}
 
