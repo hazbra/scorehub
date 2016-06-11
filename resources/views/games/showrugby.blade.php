@@ -1,6 +1,6 @@
 @extends('layouts.app')  
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src='/scorehub2.0/public/js/matchFunctions.js'></script>
+<script src='/js/matchFunctions.js'></script>
 
 <script>
   window.twttr = (function(d, s, id) {
@@ -51,7 +51,7 @@
     @foreach($undo as $row3)
     @endforeach
     <br>
-    <form method="POST" action="/scorehub2.0/public/games/{{ $game->id }}/scores">
+    <form method="POST" action="/games/{{ $game->id }}/scores">
       <div class="form-group">
       {{ csrf_field() }}
 
@@ -95,7 +95,7 @@
 
       
     <div class="text-center">
-    <form method="POST" action="/scorehub2.0/public/games/{{ $game->id }}/undo">
+    <form method="POST" action="/games/{{ $game->id }}/undo">
       <button class="btn btn-warning" type="submit" name = "undo" id="undo">Undo Last Score</button>
       {{ csrf_field() }}
    
