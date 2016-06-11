@@ -95,9 +95,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src='/scorehub2.0/public/js/jsTimeWatch.min.js'></script>
-    <script src='/scorehub2.0/public/js/clockFunctions.js'></script>
-    <script src='/scorehub2.0/public/js/showdivs.js'></script>
+    <script src='/js/jsTimeWatch.min.js'></script>
+    <script src='/js/clockFunctions.js'></script>
+    <script src='/js/showdivs.js'></script>
 
     
 </body>
