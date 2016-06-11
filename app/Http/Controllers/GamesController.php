@@ -107,7 +107,7 @@ class GamesController extends Controller
       SUM(goal) AS totalGoal,
       SUM(point) AS totalPoints,
       (Sum(point) + Sum(goal*3)) AS totalScore
-      FROM games g, Scores s
+      FROM games g, scores s
       WHERE g.id = s.game_id
       AND g.sport_id = 3
       -- AND s.team_name = g.team1
@@ -130,7 +130,7 @@ class GamesController extends Controller
     {
       $sql = DB::select(DB::raw("SELECT DISTINCT g.id, team_name,
       SUM(goal) AS totalGoal
-      FROM games g, Scores s
+      FROM games g, scores s
       WHERE g.id = s.game_id
       AND g.sport_id = 2
       -- AND s.team_name = g.team1
@@ -157,7 +157,7 @@ class GamesController extends Controller
       SUM(conversion) AS totalConversion,
       SUM(penalty) AS totalPenalty,
       (Sum(try_score*5) + Sum(conversion*2) +Sum(penalty*3)) AS totalScore
-      FROM games g, Scores s
+      FROM games g, scores s
       WHERE g.id = s.game_id
       AND g.sport_id = 1
       GROUP BY id, team_name"));
