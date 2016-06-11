@@ -9,7 +9,7 @@
       <ul class="list-group">
         @foreach ($sport->games as $game) 
           <li class="list-group-item">
-            <a href="/scorehub2.0/public/games/{{ $game->id }}">
+            <a href="/games/{{ $game->id }}">
             {{ $game->team1 }} VS {{ $game->team2 }}</a>
             <!-- <a href="#" style ="float:right">{{ $game->user->name }} </a> -->
           </li>
@@ -17,7 +17,7 @@
       </ul>
 
       <h3>Add A New Game</h3>
-        <form method="POST" action="/scorehub2.0/public/sports/{{ $sport->id }}/games">
+        <form method="POST" action="/sports/{{ $sport->id }}/games">
           {{ csrf_field() }}
           <input type="hidden" name="sport_id" id="sport_id" value="{{ $sport->id }}">
            
