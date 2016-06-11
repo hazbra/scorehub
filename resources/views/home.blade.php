@@ -10,7 +10,7 @@
                 <div class="panel-body">
                     You are logged in!
 
-                    <p><a href="/scorehub2.0/public/sports">Select Sport</a></p>
+                    <p><a href="/sports">Select Sport</a></p>
                         
                 </div>
             </div>
