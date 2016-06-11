@@ -1,7 +1,4 @@
 @extends('layouts.app')
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src='/js/matchFunctions.js'></script>
-
 
 @section('content')
 
@@ -35,7 +32,7 @@
 
             <div class="form-group">
 
-              <button type="submit" id = "addGame" class="btn btn-primary">Add Game</button>
+              <button type="submit" class="btn btn-primary">Add Game</button>
 
             </div>
         </form>
