@@ -43,7 +43,7 @@ return [
 
     'twitter' => [
       'client_id' => 'kSWAihtsaIyTXl9QWTmE2bBXi',
-      'client_secret' => $_ENV('TWITTER_CONSUMER_SECRET'),
+      'client_secret' => 'yTeKRbnfJ8ZP9yh6eTLFxLwJq52IrJ0RVJtuZ3Q55CAMC3wE88',
       'redirect' => 'http://scorehub.info/callback/twitter',
     ],
 
