@@ -36,20 +36,20 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => '955957134441597',
-        'client_secret' => '24a9fa6f3165c3edcaba1762ecc5b61c',
+        'client_id' => env('FACEBOOK_CLIENT_ID', false),
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET', false),
         'redirect' => 'http://scorehub.info/callback/facebook',
     ],
 
     'twitter' => [
-      'client_id' => 'kSWAihtsaIyTXl9QWTmE2bBXi',
+      'client_id' => env('TWITTER_CONSUMER_KEY', false),
       'client_secret' => env('TWITTER_CONSUMER_SECRET', false),
       'redirect' => 'http://scorehub.info/callback/twitter',
     ],
 
     'google' => [
-        'client_id' => '301672841035-nkll5p9pb64jsjmu2gfdne5gku0un4hh.apps.googleusercontent.com',
-        'client_secret' => 'D70PBxR4zx7R7gTorzjZEU4j',
+        'client_id' => env('GOOGLE_CLIENT_ID', false),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET', false),
         'redirect' => 'http://scorehub.info/callback/google',
     ],
 
