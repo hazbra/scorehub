@@ -38,7 +38,7 @@
     
 </head>
 <body id="app-layout">
-<?php include_once("/analyticstracking.php") ?>
+<?php include_once("analyticstracking.php") ?>
     <nav class="navbar navbar-default navbar-static-top" style="background-color:#4CAF50">
         <div class="container">
             <div class="navbar-header">
